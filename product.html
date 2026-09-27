@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balkan Auction - Продукти</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+  <!-- Заглавие на секцията -->
+  <div class="top-title-container">
+    <h1>Открити над <span>3000</span> аукциона</h1>
+  </div>
+
+  <div class="main-layout container">
+    
+    <!-- Лява колона: Категории -->
+    <aside class="sidebar-categories">
+      <h3 class="sidebar-title"><i class="fa-solid fa-list"></i> Категории</h3>
+      
+      <ul class="category-list">
+        <li class="active"><a href="#">Колекционерство <span class="badge">543910</span></a></li>
+        <li><a href="#">Военни предмети <span class="badge">13234</span></a></li>
+        <li><a href="#">Монети, Книжни пари <span class="badge">100713</span></a></li>
+        <li><a href="#">Филателия <span class="badge">174896</span></a></li>
+        <li><a href="#">Медали, Ордени, Плакети <span class="badge">13143</span></a></li>
+        <li><a href="#">Значки <span class="badge">34212</span></a></li>
+        <li><a href="#">Етника, Фолклор <span class="badge">12865</span></a></li>
+        <li><a href="#">Играчки, Модели <span class="badge">12772</span></a></li>
+        <li><a href="#">Инструменти и ножове <span class="badge">17578</span></a></li>
+        <li><a href="#">Стари уреди и апарати <span class="badge">11227</span></a></li>
+        <li><a href="#">Грамофонни плочи <span class="badge">9776</span></a></li>
+        <li><a href="#">Фонокарти <span class="badge">2078</span></a></li>
+        <li><a href="#">Флагчета, Знамена <span class="badge">1252</span></a></li>
+        <li><a href="#">Тютюнджийство <span class="badge">4565</span></a></li>
+        <li><a href="#">Изделия от хартия <span class="badge">77803</span></a></li>
+        <li><a href="#">Изделия от метал <span class="badge">27273</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- Дясна съдържателна част -->
+    <section class="content-area">
+      
+      <!-- Въртележка / Carousel за Топ Аукциони -->
+      <div class="top-auctions-slider">
+        <div class="slider-header">
+          <h3><i class="fa-solid fa-star"></i> Топ аукциони</h3>
+          <a href="#" class="view-all">виж всички</a>
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="nav-arrow left-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+          
+          <div class="carousel-items">
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=200&q=80" alt="Чипровски килим">
+              <p class="item-title">ПЕРФЕКТЕН! Чипровски...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 900<sup>00</sup> €</div>
+            </div>
+
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=200&q=80" alt="Монета 5 лева">
+              <p class="item-title">5 лева 1892 КБ България...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 385<sup>00</sup> €</div>
+            </div>
+
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?auto=format&fit=crop&w=200&q=80" alt="Кремъци">
+              <p class="item-title">КРЕМЪЦИ за КРЕМЪЧНА...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 28<sup>00</sup> €</div>
+            </div>
+
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=200&q=80" alt="Османски часовник">
+              <p class="item-title">Автентичен Османски...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 1550<sup>00</sup> €</div>
+            </div>
+
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=200&q=80" alt="Орден">
+              <p class="item-title">Златен орден Георги...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 1000<sup>00</sup> €</div>
+            </div>
+
+            <div class="small-card">
+              <img src="https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?auto=format&fit=crop&w=200&q=80" alt="Дървено конче">
+              <p class="item-title">Старо дървено люлеещо се...</p>
+              <div class="item-price"><i class="fa-solid fa-arrow-trend-up"></i> 0<sup>01</sup> €</div>
+            </div>
+          </div>
+
+          <button class="nav-arrow right-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Лента за филтриране и изглед -->
+      <div class="filter-bar">
+        <div class="select-dropdown">
+          <i class="fa-solid fa-sliders"></i>
+          <select>
+            <option>Завършващи</option>
+            <option>Новодобавени</option>
+            <option>Най-евтини</option>
+            <option>Най-скъпи</option>
+          </select>
+        </div>
+
+        <div class="view-toggle">
+          <button class="btn-view active"><i class="fa-solid fa-border-all"></i></button>
+          <button class="btn-view"><i class="fa-solid fa-list-ul"></i></button>
+        </div>
+      </div>
+
+      <!-- Основна грид решетка с карти -->
+      <div class="main-product-grid">
+
+        <div class="main-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=400&q=80" alt="Картичка Германия">
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">СТАРА ПОЩЕНСКА КАРТИЧКА ГЕРМАНИЯ...</h4>
+            <div class="card-price"><i class="fa-solid fa-arrow-trend-up"></i> 0<sup>20</sup> €</div>
+          </div>
+        </div>
+
+        <div class="main-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=400&q=80" alt="Пътувала картичка">
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">СТАРА ПЪТУВАЛА ПОЩЕНСКА КАРТИЧКА...</h4>
+            <div class="card-price"><i class="fa-solid fa-arrow-trend-up"></i> 0<sup>10</sup> €</div>
+          </div>
+        </div>
+
+        <div class="main-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=400&q=80" alt="Картичка Ленинград">
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">СТАРА ПОЩЕНСКА КАРТИЧКА - ЛЕНИНГРАД...</h4>
+            <div class="card-price"><i class="fa-solid fa-arrow-trend-up"></i> 0<sup>10</sup> €</div>
+          </div>
+        </div>
+
+        <div class="main-card">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=400&q=80" alt="Портрет картичка">
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">СТАРА ПЪТУВАЛА ПОЩЕНСКА КАРТИЧКА...</h4>
+            <div class="card-price"><i class="fa-solid fa-arrow-trend-up"></i> 0<sup>20</sup> €</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+</body>
+</html>
