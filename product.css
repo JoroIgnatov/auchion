@@ -1,1 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Заглавие */
+.top-title-container {
+  max-width: 1240px;
+  margin: 20px auto 10px auto;
+  padding: 0 15px;
+}
+
+.top-title-container h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.top-title-container h1 span {
+  color: #0b5d1e;
+}
+
+/* Главен Layout: Sidebar + Content */
+.main-layout {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+/* Ляво странично меню (Категории) */
+.sidebar-categories {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.sidebar-title {
+  font-size: 14px;
+  color: #0b5d1e;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-list li {
+  margin-bottom: 6px;
+}
+
+.category-list li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.category-list li.active a {
+  background-color: #d8ebd9;
+  color: #0b5d1e;
+  font-weight: bold;
+}
+
+.category-list li a:hover {
+  color: #0b5d1e;
+}
+
+.category-list .badge {
+  color: #888;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.category-list li.active .badge {
+  color: #0b5d1e;
+  font-weight: bold;
+}
+
+/* Дясна основна секция */
+.content-area {
+  flex-grow: 1;
+}
+
+/* Въртележка Топ Аукциони */
+.top-auctions-slider {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.slider-header h3 {
+  font-size: 14px;
+  color: #0b5d1e;
+}
+
+.view-all {
+  font-size: 11px;
+  color: #777;
+  text-decoration: none;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-arrow {
+  background: #e0e0e0;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.carousel-items {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.small-card {
+  width: 110px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.small-card img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.item-title {
+  font-size: 11px;
+  color: #444;
+  margin: 6px 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-price {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0b5d1e;
+}
+
+.item-price i {
+  font-size: 10px;
+  background: #a9dfbf;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #a9dfbf;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #0b5d1e;
+}
+
+/* Филтри и подредба */
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.select-dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.select-dropdown select {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-view {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
+.btn-view.active {
+  background-color: #0b5d1e;
+  color: #fff;
+  border-color: #0b5d1e;
+}
+
+/* Главна Решетка за Картите */
+.main-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e5e5;
+}
+
+.card-img-holder {
+  width: 100%;
+  height: 160px;
+  background-color: #000;
+}
+
+.card-img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 11px;
+  font-weight: normal;
+  color: #333;
+  text-transform: uppercase;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.card-price {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0b5d1e;
+}
+
+.card-price i {
+  font-size: 10px;
+  background: #a9dfbf;
+  border-radius: 50%;
+  padding: 2px;
+}
